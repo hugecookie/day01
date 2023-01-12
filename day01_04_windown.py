@@ -1,3 +1,5 @@
+# 실험 4
+
 import tkinter as tk
 
 win = tk.Tk()
