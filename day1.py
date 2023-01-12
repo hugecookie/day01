@@ -1,10 +1,18 @@
-#for countdown in 5,4,3,2,1, "hey":
-#    print(countdown)
-#print('프로그램 종료')
-# 실험2
-# 스네이크 표기법이란 단어 사이에 _를 집어 넣는 표기법을 말한다 파이썬에서는 이와 같은 방식을 사용한다.
-countdown_list = [5,4,3,2,1, "hey"]
-for countdown in countdown_list:
-    print(countdown)
-print(countdown_list[3])
-print('프로그램 종료')
+# 실험 3
+
+subjects = {
+    "의사소통영어": "A0",
+    "데이터베이스": "A+",
+    "회귀분석": "B+",
+    }
+student = '박화랑'
+subject = '데이터베이스'
+print(student, '학생의', subject, '성적은', subjects[subject])
+
+# f 스트링 기법
+print(f'{student}학생의 {subject}과목 성적은 {subjects[subject]}입니다')
+# modern style
+#print("{0}학생의 {1}과목 성적은 {2}입니다.". format(student, subject, subjects[subject]))
+
+# old style
+print("%s학생의 %s과목 성적은 %s입니다" % (student, subject, subjects[subject]))
